@@ -1,76 +1,86 @@
+import folium
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+from streamlit_folium import st_folium
+
+### INSTRUCTIONS ###
+# 1. Install the required libraries:
+#    pip install streamlit folium pandas plotly streamlit-folium
+# 2. Save this code in a file named `streamlit_app.py`.
+# 3. Run the Streamlit app:
+#    streamlit run streamlit_app.py
+# 4. Once you've finished, push the code to the GitHub repository.
 
 # --- Page Config ---
-st.set_page_config(page_title="Duta Data Deliverable", layout="wide")
+st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
 
 # --- Tabs ---
-tab1, tab2, tab3, tab4 = st.tabs(["📊 Dashboard", "🗺️ Map View", "📋 Data Table", "🧠 Insights"])
+tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
 
-# --- Dashboard Tab ---
+# --- Risk Analysis Tab ---
 with tab1:
-    st.title("Duta Data Dashboard")
-
-    col1, col2, col3 = st.columns(3)
-    col1.metric("Total Users", "2,450", "+150")
-    col2.metric("Engagement Rate", "74%", "+4%")
-    col3.metric("Avg. Session Time", "3m 24s", "-12s")
-
-    st.markdown("---")
-    st.write("Welcome to the Duta Data Dashboard.")
-
-# --- Map View Tab ---
-with tab2:
-    st.title("Togglas Map")
-
-    toggle = st.radio("Toggle View", ["Option A", "Option B"], horizontal=True)
-    st.write(f"Selected: {toggle}")
-
-    # Sample dataset
-    df_map = px.data.gapminder().query("year == 2007")
+    # Title and Description
+    st.title("Risk Analysis")
+    st.write("This dashboard provides insights into the risk associated with air pollution in South San Francisco."
+             "and San Bruno.")
+    
+    # Weights Slider for Composite Risk Score
+    st.subheader("Composite Risk Score Weights")
+    st.write("Adjust the weights to see how they affect the overall risk score.")
+    
+    # --- Enkhjin ---
+    # NOTE: It's not possible to use a dual thumb slider in Streamlit, so you can either use two separate sliders 
+    # between 0% and 100% or a single slider for one weight and then take the complement for the other.
 
     # Search Bar
-    search_query = st.text_input("Search for a country or location (case-insensitive):")
-    if search_query:
-        filtered = df_map[df_map['country'].str.contains(search_query, case=False, na=False)]
-        if not filtered.empty:
-            st.success(f"Found {len(filtered)} location(s) matching: {search_query}")
-        else:
-            st.warning("No matching location found.")
-    else:
-        filtered = df_map
+    # --- Mack ---
+    search_query = st.text_input("Curious about a specific location? Enter a street address (eg. 123 Main St):")
+    
+    # Geocoding
+    # NOTE: You would typically use a geocoding API here to convert the address to coordinates.
+    # Use the results to later capture information about a specific census tract.
 
-    st.subheader("Map Visualization")
-    fig = px.scatter_geo(filtered, locations="iso_alpha", color="continent",
-                         hover_name="country", size="pop",
-                         projection="natural earth", title="World Data Map")
-    st.plotly_chart(fig, use_container_width=True)
+    # Map Visualization
+    # --- Enkhjin ---
+    st.subheader("[INSERT MAP NAME]")
+    st.write("This map shows the composite risk scores across different neighborhoods in SSF and San Bruno.")
 
-# --- Data Table Tab ---
-with tab3:
-    st.title("Data Summary Table")
+    # Load dataset for map visualization
 
-    sample_data = {
-        "Region": ["North", "South", "East", "West"],
-        "Users": [850, 650, 480, 470],
-        "Growth (%)": [12.5, 9.8, 7.3, 6.9]
-    }
-    df = pd.DataFrame(sample_data)
-    st.dataframe(df)
+    # Visualize the data with map (If you could make it a heatmap, that would be great)
+    # NOTE: I added a library (`st_folium`) to visualize the map you created with Folium. make sure to install it
+    # with `pip install streamlit-folium`
 
-# --- Insights Tab ---
-with tab4:
+    # Insights & Interpretation
+    # --- Mack ---
     st.title("Insights & Interpretation")
 
     st.info("""
-    - North region has the highest growth and user base.
-    - South is catching up with slightly slower growth.
-    - Consider investing in East and West regions for balance.
+    - [INSERT INSIGHT 1]
+    - [INSERT INSIGHT 2]
+    - [INSERT INSIGHT 3]
     """)
 
-    st.markdown("Further analysis and recommendations go here.")
+with tab2:
+    # Title and Description
+    st.title("Additional Information")
+    st.write("This section provides additional information and analysis that curated while developing the dashboard.")
+
+    # --- Isaac ---
+    # Load datasets for additional information
+    # NOTE: You can download the datasets you used for your analysis and load them here via pandas. Then, you can use
+    # plotly to visualize the data.
+
+    # Insights & Interpretation
+    # --- Isaac ---
+    # NOTE: You can add insights and interpretations in the function below.
+    st.info("""
+    - [INSERT INSIGHT 1]
+    - [INSERT INSIGHT 2]
+    - [INSERT INSIGHT 3]
+    """)
 
 # --- Footer ---
 st.markdown("---")
-st.caption("Generated by Duta Data · 2025")
+st.caption("Rise South City · 2025")
