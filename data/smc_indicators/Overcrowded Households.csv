@@ -1,0 +1,1205 @@
+"Indicator Name","What Is This Indicator","Location Type",Location,"Indicator Rate Value","Indicator Rate Value Units","Rate Lower Confidence Interval","Rate Upper Confidence Interval","Indicator Count Value","Indicator Count Value Units","Count Lower Confidence Interval","Count Upper Confidence Interval","Indicator Value Unstable","Period of Measure","Data Source","Technical Note","Breakout Title","Breakout Category","Breakout Subcategory","Breakout Rate Value","Breakout Rate Value Units","Breakout Rate Lower Confidence Interval","Breakout Rate Upper Confidence Interval","Breakout Count Value","Breakout Count Value Units","Breakout Count Lower Confidence Interval","Breakout Count Upper Confidence Interval","Breakout Unstable","Breakout Footer"
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600100,4.0,percent,,,81,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600200,6.2,percent,,,68,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600300,6.2,percent,,,87,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600401,5.2,percent,,,59,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600402,9.9,percent,,,115,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600501,10.3,percent,,,122,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600502,11.5,percent,,,128,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600600,13.9,percent,,,202,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600701,10.5,percent,,,123,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600702,13.3,percent,,,119,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600800,31.9,percent,,,787,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081600900,4.5,percent,,,62,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601000,6.6,percent,,,151,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601100,3.3,percent,,,62,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601200,14.2,percent,,,299,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601301,33.1,percent,,,381,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601302,24.6,percent,,,369,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601400,9.7,percent,,,211,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601501,13.2,percent,,,192,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601502,23.3,percent,,,387,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601601,9.5,percent,,,88,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601603,10.7,percent,,,223,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601604,9.5,percent,,,107,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601605,5.7,percent,,,108,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601700,1.7,percent,,,23,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601800,1.6,percent,,,35,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601901,4.3,percent,,,53,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081601902,11.3,percent,,,242,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602001,5.5,percent,,,79,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602002,1.2,percent,,,14,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602100,18.0,percent,,,173,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602201,19.6,percent,,,345,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602202,11.2,percent,,,137,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602300,5.1,percent,,,69,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602400,11.1,percent,,,303,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602500,3.3,percent,,,49,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602601,3.8,percent,,,57,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602602,13.1,percent,,,168,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602700,5.7,percent,,,112,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602800,6.7,percent,,,103,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081602900,5.6,percent,,,89,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603000,5.7,percent,,,112,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603100,0.4,percent,,,5,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603200,2.0,percent,,,26,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603300,0.5,percent,,,12,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603400,1.3,percent,,,27,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603700,2.9,percent,,,56,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603801,3.4,percent,,,42,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603802,6.0,percent,,,117,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081603900,9.4,percent,,,199,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604000,1.4,percent,,,17,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604102,11.0,percent,,,180,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604103,9.3,percent,,,131,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604104,3.8,percent,,,45,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604200,11.0,percent,,,102,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604400,8.0,percent,,,150,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604500,0.7,percent,,,9,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604600,0.9,percent,,,8,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604700,1.7,percent,,,16,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604800,5.6,percent,,,102,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081604900,6.0,percent,,,71,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605000,5.7,percent,,,163,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605100,1.2,percent,,,14,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605200,1.7,percent,,,23,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605300,7.5,percent,,,145,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605400,12.7,percent,,,347,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605501,6.9,percent,,,116,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605502,2.8,percent,,,25,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605600,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605700,0.4,percent,,,7,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605800,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605901,4.5,percent,,,51,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081605902,12.5,percent,,,160,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606000,11.7,percent,,,281,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606100,21.5,percent,,,306,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606201,24.5,percent,,,284,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606202,20.0,percent,,,234,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606300,6.5,percent,,,115,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606400,2.7,percent,,,66,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606500,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606600,4.3,percent,,,63,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606700,0.5,percent,,,5,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606800,1.7,percent,,,22,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081606900,1.6,percent,,,14,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607000,3.5,percent,,,48,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607100,2.1,percent,,,21,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607200,14.1,percent,,,232,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607300,1.7,percent,,,21,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607400,18.5,percent,,,370,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607500,9.8,percent,,,248,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607600,5.0,percent,,,93,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607701,11.9,percent,,,168,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607702,7.3,percent,,,59,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607800,3.1,percent,,,35,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081607900,3.8,percent,,,65,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608001,7.3,percent,,,105,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608002,1.4,percent,,,18,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608013,2.5,percent,,,35,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608023,1.8,percent,,,14,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608024,2.3,percent,,,30,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608025,12.5,percent,,,326,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608100,4.3,percent,,,54,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608200,0.3,percent,,,5,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608300,5.0,percent,,,68,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608400,3.0,percent,,,61,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608501,4.5,percent,,,73,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608502,3.5,percent,,,40,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608600,7.8,percent,,,153,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608700,1.4,percent,,,38,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608800,0.8,percent,,,17,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081608900,8.0,percent,,,236,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609000,2.9,percent,,,28,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609100,3.8,percent,,,21,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609201,0.6,percent,,,9,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609202,4.0,percent,,,87,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609300,4.8,percent,,,55,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609400,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609500,0.5,percent,,,8,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609601,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609602,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609603,1.4,percent,,,25,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609700,1.8,percent,,,31,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609800,0.9,percent,,,15,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081609900,0.6,percent,,,7,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610000,5.7,percent,,,113,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610100,8.8,percent,,,79,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610201,20.9,percent,,,387,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610202,6.9,percent,,,173,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610203,26.0,percent,,,233,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610302,10.2,percent,,,162,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610303,3.7,percent,,,105,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610304,3.6,percent,,,64,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610400,22.6,percent,,,329,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610500,22.8,percent,,,299,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610601,27.4,percent,,,411,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610602,5.1,percent,,,53,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610700,10.4,percent,,,206,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610800,22.8,percent,,,335,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610901,14.5,percent,,,195,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081610902,13.4,percent,,,149,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611000,8.8,percent,,,198,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611100,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611200,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611300,7.0,percent,,,123,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611400,0.5,percent,,,7,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611500,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611600,6.3,percent,,,47,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611700,16.2,percent,,,288,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611800,15.5,percent,,,171,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611901,17.2,percent,,,178,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081611902,13.5,percent,,,278,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612001,26.4,percent,,,256,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612002,24.3,percent,,,205,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612101,7.3,percent,,,100,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612102,15.7,percent,,,211,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612500,6.3,percent,,,116,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612600,3.9,percent,,,76,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612700,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612800,1.0,percent,,,10,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081612900,1.5,percent,,,24,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613000,0.4,percent,,,5,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613200,2.7,percent,,,70,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613300,1.5,percent,,,13,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613400,0.0,percent,,,0,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613501,6.7,percent,,,89,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613502,0.8,percent,,,19,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613600,1.2,percent,,,25,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613701,1.6,percent,,,22,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613702,7.4,percent,,,120,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613800,13.8,percent,,,210,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081613900,3.0,percent,,,60,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
+"Overcrowded Households","This indicator shows the households where there are more people than rooms of all types, besides bathrooms.
+ 
+
+Numerator = Total estimate of housing units with 1.01 or more occupants per room
+Denominator = Total estimate of occupied housing units
+","Census Tract",06081614000,4.8,percent,,,90,households,,,No,2019-2023,"American Community Survey 5-Year","The U.S. Census Bureau calculates 90% confidence intervals for American Community Survey estimates. Use caution when interpreting values with wide confidence intervals. Confidence intervals that are farther away from estimates in either direction indicate uncertainty due to small survey sample sizes. 
+The U.S. Census Bureau does not recommend comparing overlapping 5-year periods since much of the data in each estimate are the same. Use caution when comparing estimates for census tracts over time as these geographies are redefined with each decennial census according to population changes.",,,,,,,,,,,,,
