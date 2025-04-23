@@ -15,7 +15,7 @@ from streamlit_folium import st_folium
 # --- Page Config ---
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
 
-# --- Tabs ---
+# --- Pages ---
 tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
 
 # --- Risk Analysis Tab ---
