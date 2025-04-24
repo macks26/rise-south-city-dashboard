@@ -40,10 +40,6 @@ with tab1:
     health_weight = 100 - air_weight
     st.write(f"Air Quality: {air_weight}%, Health Risk: {health_weight}%")
 
-    # Search Bar
-    # --- Mack ---
-    # search_query = st.text_input("Curious about a specific location? Enter a street address (eg. 123 Main St):")
-    
     # Geocoding
     # NOTE: You would typically use a geocoding API here to convert the address to coordinates.
     # Use the results to later capture information about a specific census tract.
