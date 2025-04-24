@@ -1,38 +1,48 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load the air traffic file
-file_path = '../data/air_traffic.csv'
-df = pd.read_csv(file_path)
+# Load PurpleAir and Clarity data
+purpleair = pd.read_csv('../data/clean_purpleair.csv')
+clarity = pd.read_csv('../data/clean_clarity.csv')
+air_traffic = pd.read_csv('../data/air_traffic.csv')
 
-# Convert date column to datetime format
-df['activity_period_start_date'] = pd.to_datetime(df['activity_period_start_date'])
+# Preprocess PurpleAir data
+purpleair['time'] = pd.to_datetime(purpleair['time'])
+purpleair['year_month'] = purpleair['time'].dt.to_period('M')
+monthly_pm25_purpleair = purpleair.groupby('year_month')['pm2_5_1h_mean'].mean().reset_index()
 
-# Extract year and month
-df['year'] = df['activity_period_start_date'].dt.year
-df['month'] = df['activity_period_start_date'].dt.to_period('M')
+# Filter PurpleAir for Dec 2018 - Dec 2023
+monthly_pm25_purpleair = monthly_pm25_purpleair[(monthly_pm25_purpleair['year_month'] >= '2018-12') & (monthly_pm25_purpleair['year_month'] <= '2023-12')]
 
-# Filter data for the years 2018 to 2025
-filtered_df = df[(df['year'] >= 2018) & (df['year'] <= 2025)]
+# Preprocess Clarity data
+clarity['time'] = pd.to_datetime(clarity['time'])
+clarity_filtered = clarity[(clarity['time'] >= '2024-10-30') & (clarity['time'] <= '2025-01-22')]
+clarity_filtered['year_month'] = clarity_filtered['time'].dt.to_period('M')
+monthly_pm25_clarity = clarity_filtered.groupby('year_month')['pm2_5_1h_mean'].mean().reset_index()
 
-# Group by month and sum passenger counts
-monthly_passenger_traffic = (
-    filtered_df
-    .groupby('month')['passenger_count']
-    .sum()
-    .reset_index()
-)
+# Preprocess Air Traffic data
+air_traffic['activity_period_start_date'] = pd.to_datetime(air_traffic['activity_period_start_date'])
+air_traffic['year_month'] = air_traffic['activity_period_start_date'].dt.to_period('M')
+monthly_air_traffic = air_traffic.groupby('year_month')['passenger_count'].sum().reset_index()
 
-# Convert month to datetime for plotting
-monthly_passenger_traffic['month'] = monthly_passenger_traffic['month'].astype(str)
-monthly_passenger_traffic['month'] = pd.to_datetime(monthly_passenger_traffic['month'])
+# Plot 1: PurpleAir PM 2.5 and Air Traffic (Dec 2018 - Dec 2023)
+merged_data_pa = pd.merge(monthly_pm25_purpleair, monthly_air_traffic, on='year_month', how='inner')
+fig, ax1 = plt.subplots(figsize=(14, 7))
+ax1.plot(merged_data_pa['year_month'].dt.to_timestamp(), merged_data_pa['pm2_5_1h_mean'],
+         color='purple', marker='o', label='Average PM 2.5 (PurpleAir)')
+ax1.set_xlabel('Date')
+ax1.set_ylabel('Average PM 2.5 (PurpleAir)', color='purple')
+ax1.tick_params(axis='y', labelcolor='purple')
 
-# Plot
-plt.figure(figsize=(14, 6))
-plt.plot(monthly_passenger_traffic['month'], monthly_passenger_traffic['passenger_count'], marker='o')
-plt.title('Monthly Passenger Traffic at SFO (2018–2025)', fontsize=16)
-plt.xlabel('Month')
-plt.ylabel('Passenger Count')
-plt.grid(True)
-plt.tight_layout()
+ax2 = ax1.twinx()
+ax2.plot(merged_data_pa['year_month'].dt.to_timestamp(), merged_data_pa['passenger_count'],
+         color='tab:blue', marker='o', label='Total Air Traffic')
+ax2.set_ylabel('Total Air Traffic (Passengers)', color='tab:blue')
+ax2.tick_params(axis='y', labelcolor='tab:blue')
+
+ax1.xaxis.set_major_locator(plt.MaxNLocator(10))
+fig.autofmt_xdate(rotation=45)
+ax1.grid(True, linestyle='--', alpha=0.5)
+plt.title('Monthly Avg PM 2.5 (PurpleAir) & Air Traffic (Dec 2018–Dec 2023)')
+fig.tight_layout()
 plt.show()
