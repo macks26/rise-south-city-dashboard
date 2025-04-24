@@ -1,9 +1,8 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# Load PurpleAir and Clarity data
+# Load PurpleAir data
 purpleair = pd.read_csv('../data/clean_purpleair.csv')
-clarity = pd.read_csv('../data/clean_clarity.csv')
 air_traffic = pd.read_csv('../data/air_traffic.csv')
 
 # Preprocess PurpleAir data
@@ -14,18 +13,12 @@ monthly_pm25_purpleair = purpleair.groupby('year_month')['pm2_5_1h_mean'].mean()
 # Filter PurpleAir for Dec 2018 - Dec 2023
 monthly_pm25_purpleair = monthly_pm25_purpleair[(monthly_pm25_purpleair['year_month'] >= '2018-12') & (monthly_pm25_purpleair['year_month'] <= '2023-12')]
 
-# Preprocess Clarity data
-clarity['time'] = pd.to_datetime(clarity['time'])
-clarity_filtered = clarity[(clarity['time'] >= '2024-10-30') & (clarity['time'] <= '2025-01-22')]
-clarity_filtered['year_month'] = clarity_filtered['time'].dt.to_period('M')
-monthly_pm25_clarity = clarity_filtered.groupby('year_month')['pm2_5_1h_mean'].mean().reset_index()
-
 # Preprocess Air Traffic data
 air_traffic['activity_period_start_date'] = pd.to_datetime(air_traffic['activity_period_start_date'])
 air_traffic['year_month'] = air_traffic['activity_period_start_date'].dt.to_period('M')
 monthly_air_traffic = air_traffic.groupby('year_month')['passenger_count'].sum().reset_index()
 
-# Plot 1: PurpleAir PM 2.5 and Air Traffic (Dec 2018 - Dec 2023)
+# PurpleAir PM 2.5 and Air Traffic (Dec 2018 - Dec 2023)
 merged_data_pa = pd.merge(monthly_pm25_purpleair, monthly_air_traffic, on='year_month', how='inner')
 fig, ax1 = plt.subplots(figsize=(14, 7))
 ax1.plot(merged_data_pa['year_month'].dt.to_timestamp(), merged_data_pa['pm2_5_1h_mean'],
