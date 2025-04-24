@@ -7,6 +7,7 @@ from shapely.geometry import Point
 from folium.plugins import Geocoder
 from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
+import os
 
 ### INSTRUCTIONS ###
 # 1. Install the required libraries:
@@ -53,9 +54,16 @@ with tab1:
     # NOTE: I added a library (`st_folium`) to visualize the map you created with Folium
 
     # Load and process data
+    # Load the datasets
     clarity = pd.read_csv("../data/clean_clarity.csv")
     purpleair = pd.read_csv("../data/clean_purpleair.csv")
     tracts = gpd.read_file("../data/census.geojson")
+
+    # Find unique locations for clarity monitors
+    clarity_locations = clarity[['longitude', 'latitude']].drop_duplicates().reset_index(drop=True)
+
+    # Find unique locations for purpleair monitors
+    purpleair_locations = purpleair[['longitude', 'latitude']].drop_duplicates().reset_index(drop=True)
 
     # Combine both sensor datasets into one DataFrame
     combined = pd.concat([clarity, purpleair], ignore_index=True)
@@ -99,15 +107,20 @@ with tab1:
     # If a user types an address, geocode it using Nominatim
     if search_query:
         geolocator = Nominatim(user_agent="rise-south-city")
-        location = geolocator.geocode(search_query)
+        location = (geolocator.geocode(f"{search_query}, South San Francisco, CA") or 
+                    geolocator.geocode(f"{search_query}, San Bruno, CA"))
         if location:
             marker_coords = [location.latitude, location.longitude]
             map_center = marker_coords
+            zoom_level = 14  # Zoom in closer to the searched location
         else:
             st.warning("Address not found. Please try again.")
+            zoom_level = 12  # Default zoom level
+    else:
+        zoom_level = 12  # Default zoom level
 
     # Build the folium map
-    m = folium.Map(location=map_center, zoom_start=12, tiles=None)
+    m = folium.Map(location=map_center, zoom_start=zoom_level, tiles=None)
     folium.TileLayer("OpenStreetMap", opacity=0.4).add_to(m)
 
     # Color census tracts based on their average AQI
@@ -133,13 +146,48 @@ with tab1:
         )
     ).add_to(m)
 
+    # Add Clarity monitor locations (blue markers)
+    for _, row in clarity_locations.iterrows():
+        folium.CircleMarker(
+            location=[row['latitude'], row['longitude']],
+            radius=5,
+            color="blue",
+            fill=True,
+            fill_color="blue",
+            fill_opacity=0.7,
+            tooltip="Clarity Monitor"
+        ).add_to(m)
+
+    # Add PurpleAir monitor locations (purple markers)
+    for _, row in purpleair_locations.iterrows():
+        folium.CircleMarker(
+            location=[row['latitude'], row['longitude']],
+            radius=5,
+            color="purple",
+            fill=True,
+            fill_color="purple",
+            fill_opacity=0.7,
+            tooltip="PurpleAir Monitor"
+        ).add_to(m)
+
     # Add a marker for the searched address if any
     if marker_coords:
-        folium.Marker(
+        # Add a marker for the searched address
+        pin = folium.Marker(
             location=marker_coords,
-            tooltip="Searched Location",
-            icon=folium.Icon(color="blue", icon="search", prefix="fa")
-        ).add_to(m)
+            tooltip=search_query,  # Use the search_query as the pin title
+            icon=folium.Icon(color="red", icon="map-pin", prefix="fa")  # Use a pin-like icon
+        )
+
+        # Add a popup with the address and predictability index
+        folium.Popup(
+            f"<b>Address:</b> {search_query}<br>"
+            f"<b>Predictability Index:</b> [INSERT VALUE]<br>",
+            max_width=300
+        ).add_to(pin)
+
+        # Add the pin to the map
+        pin.add_to(m)
 
     # Full width map
     st_folium(m, use_container_width=True, height=700)
@@ -149,9 +197,14 @@ with tab1:
     st.title("Insights & Interpretation")
 
     st.info("""
-    - [INSERT INSIGHT 1]
-    - [INSERT INSIGHT 2]
-    - [INSERT INSIGHT 3]
+    - Above is a map of the Air Quality Index (AQI) by census tract in South San Francisco and San Bruno.
+    - The map is color-coded by census tract, with darker colors indicating higher AQI levels.
+    - The higher the AQI level, the worse the air quality.
+    - The AQI for each census tract is calculated using a combination of two kinds of air monitors (Clarity and 
+            PurpleAir) that are located in that census tract. Each monitor measures the daily average of PM2.5 
+            concentrations in the air, which is a common air pollutant that can cause a significant amount of health
+            problems. Then, using these daily averages, we calculate the daily AQI for each monitor, and lastly, take
+            the average among all the days of data stored for each monitor. 
     """)
 
 with tab2:
@@ -168,9 +221,9 @@ with tab2:
     # --- Isaac ---
     # NOTE: You can add insights and interpretations in the function below.
     st.info("""
-    - [INSERT INSIGHT 1]
-    - [INSERT INSIGHT 2]
-    - [INSERT INSIGHT 3]
+    - [INSIGHT 1]
+    - [INSIGHT 2]
+    - [INSIGHT 3]
     """)
 
 # --- Footer ---
