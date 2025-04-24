@@ -164,22 +164,19 @@ with tab2:
 
     # --- Isaac ---
     # Load datasets for additional information
-    # NOTE: You can download the datasets you used for your analysis and load them here via pandas. Then, you can use
-    # plotly to visualize the data.
+    # These are loaded in shared.py
+    # BUT it takes forever to do the loading and figure generation
+    # So for now I'm just displaying images rather than generating figures spontaneously
+    # This is something to figure out for later
 
     # Insights & Interpretation
     # --- Isaac ---
-    # NOTE: You can add insights and interpretations in the function below.
-    st.info("""
-    - [INSERT INSIGHT 1]
-    - [INSERT INSIGHT 2]
-    - [INSERT INSIGHT 3]
-    """)
 
     st.image('../figures/air_traffic.png')
-
-    #st.image(['../figures/clarity_predictability_risk_map.png', '../figures/clarity_predictability_risk_map.png'])
-
+    st.info('PM2.5 and Airport Traffic Timeline: This visualization displays monthly passenger traffic at San Francisco International Airport (bottom, January 2018 to December 2024). The sharp drop in air travel during the early months of the COVID-19 pandemic (2020) aligned with a noticeable decline in PM2.5 levels, suggesting that reduced airport operations may have improved local air quality. As air traffic rebounded in 2021 and beyond, PM2.5 concentrations also rose, pointing to a potential connection between flight activity and pollution levels. However, a late-2020 spike in PM2.5 was likely driven by wildfires, underscoring that airport emissions are just one piece of a larger puzzle. This natural experiment — where travel volume changed drastically while other factors held steady — offers a rare opportunity to isolate the airport’s contribution to regional air pollution. For communities near SFO, who already face multiple environmental and socioeconomic stressors, understanding this relationship is vital. These insights can inform targeted air quality interventions, regulatory strategies, and long-term planning to reduce the cumulative burden of pollution.')
+    
+    st.image(['../figures/clarity_predictability_risk_map.png', '../figures/clarity_predictability_risk_map.png'])
+    st.info("Sensory Predictability over Percentage Uninsured: The two figures above show sensor locations (Purple and Clarity, respectively), along with a predictability index for each sensor, correlations between sensor readings, and ACS estimates of percentage uninsured for the census tracts in which the sensors were located. The 'predictability index' here is simply the maximum correlation that a sensor had with any others, intended to illustrate possible sensor redundancies. In areas where sensors are highly redundant — that is, another sensor's data can be used to accurately predict hourly readings — there may be less of a need for more nearby sensors. This is overlaid on the percentage of uninsured residents in each tract to highlight areas where people may be most vulnerable to the health effects of air pollution. Those who are uninsured cannot easily access the treatments that would help them recover from, or maintain resilience to, poor air quality. Overall, the purpose of this figure is to show where additional air sensors are most needed. If an area has low health insurance coverage and low sensor redundancy, it might benefit from the placement of new sensors so that community members can take steps to protect their health.")
     #st.pyplot(purple_predictability_risk_map)
 
 # --- Footer ---
