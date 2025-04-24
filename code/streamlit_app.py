@@ -7,7 +7,9 @@ from shapely.geometry import Point
 from folium.plugins import Geocoder
 from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim
-from shared import purple_predictability_risk_map, clarity_predictability_risk_map
+
+# This is a disaster
+# from shared import purple_predictability_risk_map, clarity_predictability_risk_map
 
 ### INSTRUCTIONS ###
 # 1. Install the required libraries:
@@ -173,6 +175,10 @@ with tab2:
     - [INSERT INSIGHT 2]
     - [INSERT INSIGHT 3]
     """)
+
+    st.image('../figures/air_traffic.png')
+
+    #st.image(['../figures/clarity_predictability_risk_map.png', '../figures/clarity_predictability_risk_map.png'])
 
     #st.pyplot(purple_predictability_risk_map)
 
