@@ -1,9 +1,8 @@
-### File: purpleair_wrapper.py
-### Author: Mack Smith
-### 
-### Description: An interface to the PurpleAir API.
-### This module provides a wrapper around the PurpleAir API to fetch and process air quality data. It includes functions 
-### to get the latest data for specific sensors or retrieve historical data for a list of sensors.
+# Author: Mack Smith
+
+# Description: An interface to the PurpleAir API.
+# This module provides a wrapper around the PurpleAir API to fetch and process air quality data. It includes functions 
+# to get the latest data for specific sensors or retrieve historical data for a list of sensors.
 
 import requests
 import pandas as pd
