@@ -79,31 +79,29 @@ with tab1:
             )
         ).add_to(m)
 
-    '''
     # Add Clarity monitor locations (blue markers)
-    for _, row in clarity_locations.iterrows():
-        folium.CircleMarker(
-            location=[row['latitude'], row['longitude']],
-            radius=5,
-            color="blue",
-            fill=True,
-            fill_color="blue",
-            fill_opacity=0.7,
-            tooltip="Clarity Monitor"
-        ).add_to(m)
-
+    # for _, row in clarity_locations.iterrows():
+    #     folium.CircleMarker(
+    #         location=[row['latitude'], row['longitude']],
+    #         radius=5,
+    #         color="blue",
+    #         fill=True,
+    #         fill_color="blue",
+    #         fill_opacity=0.7,
+    #         tooltip="Clarity Monitor"
+    #     ).add_to(m)
+    #
     # Add PurpleAir monitor locations (purple markers)
-    for _, row in purpleair_locations.iterrows():
-        folium.CircleMarker(
-            location=[row['latitude'], row['longitude']],
-            radius=5,
-            color="purple",
-            fill=True,
-            fill_color="purple",
-            fill_opacity=0.7,
-            tooltip="PurpleAir Monitor"
-        ).add_to(m) 
-    '''
+    # for _, row in purpleair_locations.iterrows():
+    #     folium.CircleMarker(
+    #         location=[row['latitude'], row['longitude']],
+    #         radius=5,
+    #         color="purple",
+    #         fill=True,
+    #         fill_color="purple",
+    #         fill_opacity=0.7,
+    #         tooltip="PurpleAir Monitor"
+    #     ).add_to(m)
 
     if marker_coords:
         folium.Marker(
