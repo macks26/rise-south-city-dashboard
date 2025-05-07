@@ -17,8 +17,41 @@ with tab1:
 
     # Slider (no functionality yet!)
     st.subheader("Composite Risk Score Weights")
-    air_weight = st.slider("Adjust air quality risk weight (%)", 0, 100, 50) # Default is at 50%
-    st.write(f"Air Quality: {air_weight}%, Health Risk: {100 - air_weight}%")
+    # air_weight = st.slider("Adjust air quality risk weight (%)", 0, 100, 50) # Default is at 50%
+    # st.write(f"Air Quality: {air_weight}%, Health Risk: {100 - air_weight}%")
+
+    # Short explanation for users
+    st.markdown("""
+    Use the slider below to choose how much weight to give to air quality risk versus health risk 
+    when calculating the overall neighborhood risk score. Slide right for more air quality emphasis, 
+    left for more health emphasis.
+    """)
+
+    # Preset buttons (makes it easier for non-tech users)
+    preset = st.radio(
+        "Quick presets:",
+        ["50% Air / 50% Health", "70% Air / 30% Health", "30% Air / 70% Health", "Custom"],
+        index=0
+    )
+
+    # Set slider value based on preset or allow custom
+    if preset == "50% Air / 50% Health":
+        air_weight = 50
+    elif preset == "70% Air / 30% Health":
+        air_weight = 70
+    elif preset == "30% Air / 70% Health":
+        air_weight = 30
+    else:
+        air_weight = st.slider(
+            "Adjust air quality risk weight (%)", 0, 100, 50, 
+            help="Slide to adjust how much weight to give to air quality versus health risk."
+        )
+
+    health_weight = 100 - air_weight
+
+    # Display selected weights with icons
+    st.write(f"🌫️ **Air Quality Weight:** {air_weight}%")
+    st.write(f"❤️ **Health Risk Weight:** {health_weight}%")
 
     # Map (to be updated later to a Composite Risk Score map!)
     st.subheader("Overall PM2.5 Exposure by Census Tract")
