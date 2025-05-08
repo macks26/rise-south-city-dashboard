@@ -1,0 +1,10 @@
+# Python version (used by some platforms like Streamlit Cloud in runtime.txt instead)
+# If needed in a separate runtime.txt file, use: python-3.10.16
+
+pandas
+streamlit
+geopandas
+branca
+folium
+streamlit-folium
+geopy

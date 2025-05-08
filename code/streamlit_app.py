@@ -15,7 +15,7 @@ st.set_page_config(page_title="Rise South City Community Dashboard", layout="wid
 
 # --- Load Data ---
 # Load Clarity and PurpleAir monitor locations
-pred_df = pd.read_csv("../data/combined_scores.csv")
+pred_df = pd.read_csv("data/combined_scores.csv")
 
 # --- Tabs ---
 tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
@@ -60,18 +60,18 @@ with tab1:
     st.write(f"❤️ **Health Risk Weight:** {health_weight}%")
 
     # Map (to be updated later to a Composite Risk Score map!)
-    st.subheader("Overall PM2.5 Exposure by Census Tract")
-    st.write("This map shows long-term average PM2.5 AQI by census tract using data from 49 sensors.")
+    st.subheader("Overall Risk Score by Census Tract")
+    st.write("This map shows the overall air quality and health risk by census tract using data from 41 sensors.")
 
     # Visualize the data with map (If you could make it a heatmap, that would be great)
     # NOTE: I added a library (`st_folium`) to visualize the map you created with Folium
 
     # Load and process data
     # Load the datasets
-    clarity = pd.read_csv("../data/clean_clarity.csv")
-    purpleair = pd.read_csv("../data/clean_purpleair.csv")
-    health_risk = pd.read_csv("../data/health_risk_index.csv")
-    tracts = gpd.read_file("../data/census.geojson")
+    clarity = pd.read_csv("data/clean_clarity.csv")
+    purpleair = pd.read_csv("data/clean_purpleair.csv")
+    health_risk = pd.read_csv("data/health_risk_index.csv")
+    tracts = gpd.read_file("data/census.geojson")
 
     # Find unique locations for clarity monitors
     clarity_locations = clarity[['longitude', 'latitude']].drop_duplicates().reset_index(drop=True)
@@ -94,7 +94,7 @@ with tab1:
     )
 
     # Load precomputed GeoJSON with AQRI data
-    geojson_path = "../data/tracts_with_combined_aqi.geojson"
+    geojson_path = "data/tracts_with_combined_aqi.geojson"
 
     # Load the GeoDataFrame
     tracts_with_data = gpd.read_file(geojson_path)
@@ -154,13 +154,13 @@ with tab1:
             tracts_with_data,
             tooltip=folium.GeoJsonTooltip(
                 fields=["geoid", "combined_aqi"],
-                aliases=["Census Tract", "AQI"],
+                aliases=["Census Tract:", "Composite Risk Score"],
                 localize=True,
                 sticky=True
             )
         ).add_to(m)
 
-    # Split Clarity (non-numeric ID) vs PurpleAir (numeric ID)
+    # Redefine clarity and purpleair locations for the map
     clarity_locations = pred_df[~pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
     purpleair_locations = pred_df[pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
 
@@ -227,12 +227,29 @@ with tab1:
     st.title("Insights & Interpretation")
 
     st.info("""
-    - This map shows combined PM2.5 Air Quality Index (AQI) scores by census tract in South San Francisco and San Bruno.
-    - Census tracts are shaded from light to dark to represent increasing levels of long-term PM2.5 exposure.
-    - The AQI for each census tract is based on measurements from two types of air monitors: Clarity and PurpleAir.
-    - Each monitor reports daily PM2.5 concentrations, which we converted to AQI scores using EPA standards. For each census tract, we computed the median AQI from all available Clarity and PurpleAir data within the period from March 30, 2024, to March 31, 2025.
-    - We then combined the Clarity and PurpleAir AQI scores using fixed weights (~76% Clarity and ~24% PurpleAir) to reflect the higher accuracy of Clarity monitors. If only one source had data for a tract, that data was used as-is.
-    - The result is a weighted, median-based AQI score for each tract, helping identify areas with higher long-term air pollution exposure.
+    ### 🧪 Composite Risk Score
+
+    This map displays a **composite air and health risk score** for each census tract in South San Francisco and San Bruno.  
+    **Darker shading** indicates **higher overall risk** in a given tract.  
+
+    The score combines two parts:  
+    - An **air quality risk score**, calculated from daily PM2.5 concentrations reported by Clarity and PurpleAir monitors. These values are converted into **Air Quality Index (AQI)** scores using EPA standards.  
+    - A **health risk score**, which integrates **health equity data** along with **general and respiratory health metrics** to identify communities more vulnerable to air pollution.  
+
+    The final score is a **weighted combination** of the two, highlighting areas where both pollution levels and health vulnerabilities are high.
+    """)
+
+    st.info("""
+    ### 📡 Monitor Predictability Index
+
+    The map also shows the locations of **air quality monitors**, each marked with a **predictability index**.  
+    This index reflects how **reliably a monitor's readings can be predicted** using historical data and nearby monitors.  
+
+    It is calculated using a combination of:  
+    - **Self-predictability** — how well a monitor's past data can forecast its future readings.  
+    - **Cross-predictability** — how well nearby monitors can be used to predict a monitor's readings.  
+
+    A **higher predictability index** suggests more stable or consistent readings, while **lower scores** may indicate irregular behavior or localized factors affecting air quality.
     """)
 
 # --- Additional Information Tab ---
@@ -240,10 +257,10 @@ with tab2:
     st.title("Additional Information")
     st.write("This section provides additional figures and context for environmental and health analysis.")
 
-    st.image('../figures/air_traffic.png')
+    st.image('figures/air_traffic.png')
     st.info('PM2.5 and Airport Traffic Timeline: This visualization displays monthly passenger traffic at San Francisco International Airport (bottom, January 2018 to December 2024). The sharp drop in air travel during the early months of the COVID-19 pandemic (2020) aligned with a noticeable decline in PM2.5 levels, suggesting that reduced airport operations may have improved local air quality. As air traffic rebounded in 2021 and beyond, PM2.5 concentrations also rose, pointing to a potential connection between flight activity and pollution levels. However, a late-2020 spike in PM2.5 was likely driven by wildfires, underscoring that airport emissions are just one piece of a larger puzzle. This natural experiment — where travel volume changed drastically while other factors held steady — offers a rare opportunity to isolate the airport’s contribution to regional air pollution. For communities near SFO, who already face multiple environmental and socioeconomic stressors, understanding this relationship is vital. These insights can inform targeted air quality interventions, regulatory strategies, and long-term planning to reduce the cumulative burden of pollution.')
     
-    st.image(['../figures/clarity_predictability_risk_map.png', '../figures/clarity_predictability_risk_map.png'])
+    st.image(['figures/clarity_predictability_risk_map.png', 'figures/clarity_predictability_risk_map.png'])
     st.info("Sensory Predictability over Percentage Uninsured: The two figures above show sensor locations (Purple and Clarity, respectively), along with a predictability index for each sensor, correlations between sensor readings, and ACS estimates of percentage uninsured for the census tracts in which the sensors were located. The 'predictability index' here is simply the maximum correlation that a sensor had with any others, intended to illustrate possible sensor redundancies. In areas where sensors are highly redundant — that is, another sensor's data can be used to accurately predict hourly readings — there may be less of a need for more nearby sensors. This is overlaid on the percentage of uninsured residents in each tract to highlight areas where people may be most vulnerable to the health effects of air pollution. Those who are uninsured cannot easily access the treatments that would help them recover from, or maintain resilience to, poor air quality. Overall, the purpose of this figure is to show where additional air sensors are most needed. If an area has low health insurance coverage and low sensor redundancy, it might benefit from the placement of new sensors so that community members can take steps to protect their health.")
 
 # Footer
