@@ -1,12 +1,21 @@
+import time
+import pandas as pd
 import streamlit as st
 import pandas as pd
 import geopandas as gpd
+import branca.colormap as cm
 import folium
 from streamlit_folium import st_folium
+import geopy
 from geopy.geocoders import Nominatim
+from geopy.distance import geodesic
 
 # --- Page Config ---
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
+
+# --- Load Data ---
+# Load Clarity and PurpleAir monitor locations
+pred_df = pd.read_csv("../data/combined_scores.csv")
 
 # --- Tabs ---
 tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
@@ -18,10 +27,6 @@ with tab1:
 
     # Slider (no functionality yet!)
     st.subheader("Composite Risk Score Weights")
-    # air_weight = st.slider("Adjust air quality risk weight (%)", 0, 100, 50) # Default is at 50%
-    # st.write(f"Air Quality: {air_weight}%, Health Risk: {100 - air_weight}%")
-
-    # Short explanation for users
     st.markdown("""
     Use the slider below to choose how much weight to give to air quality risk versus health risk 
     when calculating the overall neighborhood risk score. Slide right for more air quality emphasis, 
@@ -109,10 +114,19 @@ with tab1:
     marker_coords = None
     zoom_level = 12
 
+    @st.cache_data(show_spinner=False)
+    def geocode_address(address):
+        geolocator = Nominatim(user_agent="rise-south-city", timeout=5)
+        try:
+            return geolocator.geocode(address)
+        except geopy.exc.GeopyError as e:
+            st.error(f"Geocoding error: {e}")
+            return None
+        
     if search_query:
-        geolocator = Nominatim(user_agent="rise-south-city")
-        location = (geolocator.geocode(f"{search_query}, South San Francisco, CA") or
-                    geolocator.geocode(f"{search_query}, San Bruno, CA"))
+        # Try to geocode the address
+        location = (geocode_address(f"{search_query}, South San Francisco, CA") or
+                    geocode_address(f"{search_query}, San Bruno, CA"))
         if location:
             marker_coords = [location.latitude, location.longitude]
             map_center = marker_coords
@@ -146,37 +160,67 @@ with tab1:
             )
         ).add_to(m)
 
-    # Add Clarity monitor locations (blue markers)
-    # for _, row in clarity_locations.iterrows():
-    #     folium.CircleMarker(
-    #         location=[row['latitude'], row['longitude']],
-    #         radius=5,
-    #         color="blue",
-    #         fill=True,
-    #         fill_color="blue",
-    #         fill_opacity=0.7,
-    #         tooltip="Clarity Monitor"
-    #     ).add_to(m)
-    #
-    # Add PurpleAir monitor locations (purple markers)
-    # for _, row in purpleair_locations.iterrows():
-    #     folium.CircleMarker(
-    #         location=[row['latitude'], row['longitude']],
-    #         radius=5,
-    #         color="purple",
-    #         fill=True,
-    #         fill_color="purple",
-    #         fill_opacity=0.7,
-    #         tooltip="PurpleAir Monitor"
-    #     ).add_to(m)
+    # Split Clarity (non-numeric ID) vs PurpleAir (numeric ID)
+    clarity_locations = pred_df[~pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
+    purpleair_locations = pred_df[pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
 
+    # Create color scale using branca
+    min_val = pred_df['predictability_index'].min()
+    max_val = pred_df['predictability_index'].max()
+    color_scale = cm.linear.PuBuGn_09.scale(min_val, max_val).to_step(n=10)
+    color_scale.caption = "Predictability Index"
+
+    # Add monitor points
+    def add_monitors(df, label):
+        for _, row in df.iterrows():
+            predictability = round(row['predictability_index'], 0)
+            color = color_scale(predictability)
+            folium.CircleMarker(
+                location=[row['latitude'], row['longitude']],
+                radius=5,
+                color=color,
+                fill=True,
+                fill_color=color,
+                fill_opacity=0.7,
+                tooltip=f"{label} Monitor<br>Predictability Index: {int(predictability)}%"
+            ).add_to(m)
+
+    add_monitors(clarity_locations, "Clarity")
+    add_monitors(purpleair_locations, "PurpleAir")
+
+    # Add legend to map
+    color_scale.add_to(m)
+
+    # Add red pin for search result (if used)
     if marker_coords:
-        folium.Marker(
-            location=marker_coords,
-            tooltip=search_query,
-            icon=folium.Icon(color="red", icon="map-pin", prefix="fa")
-        ).add_to(m)
+        # Combine Clarity and PurpleAir monitor locations
+        all_monitors = pred_df[['latitude', 'longitude', 'predictability_index']]
 
+        # Calculate distances to the marker coordinates using geodesic distance
+        all_monitors['distance'] = all_monitors.apply(
+            lambda row: geodesic((row['latitude'], row['longitude']), marker_coords).miles, axis=1
+        )
+
+        # Get the 5 closest monitors
+        closest_monitors = all_monitors.nsmallest(5, 'distance')
+
+        # Perform IDW calculation
+        if not closest_monitors.empty:
+            # Avoid division by zero
+            closest_monitors = closest_monitors[closest_monitors['distance'] > 0]
+            closest_monitors['weight'] = 1 / closest_monitors['distance']
+            closest_monitors['weighted_index'] = closest_monitors['weight'] * closest_monitors['predictability_index']
+            predicted_index = closest_monitors['weighted_index'].sum() / closest_monitors['weight'].sum()
+            predicted_index = round(predicted_index, 0)
+
+            # Add prediction to the map as a popup
+            folium.Marker(
+                location=marker_coords,
+                tooltip=f"<b>Address:</b> {search_query}<br><b>Predictability Index:</b> {int(predicted_index)}%",
+                icon=folium.Icon(color="red", icon="map-pin", prefix="fa")
+            ).add_to(m)
+
+    # Render map in Streamlit
     st_folium(m, use_container_width=True, height=700)
 
     # Insights & Interpretation
