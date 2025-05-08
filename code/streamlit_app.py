@@ -60,6 +60,7 @@ with tab1:
     # Load the datasets
     clarity = pd.read_csv("../data/clean_clarity.csv")
     purpleair = pd.read_csv("../data/clean_purpleair.csv")
+    health_risk = pd.read_csv("../data/health_risk_index.csv")
     tracts = gpd.read_file("../data/census.geojson")
 
     # Find unique locations for clarity monitors
@@ -97,6 +98,11 @@ with tab1:
     )
 
     tracts_with_aqi = tracts.merge(tract_aqi, on="geoid")
+
+    # Add in health risk
+    health_risk["geoid"] = "06081" + (health_risk["tract"] * 100).astype(int).astype(str)
+    tracts_with_aqi = tracts.merge(health_risk, on="geoid")
+    tracts_with_aqi["risk_index"] = health_weight * tracts_with_aqi["Health Risk Index"] + air_weight * tracts_with_aqi["overall_tract_aqi"]
 
     # Base map center
     center = tracts_with_aqi.geometry.centroid.unary_union.centroid
