@@ -1,4 +1,5 @@
 import streamlit as st
+import pandas as pd
 import geopandas as gpd
 import folium
 from streamlit_folium import st_folium
@@ -55,6 +56,34 @@ with tab1:
 
     # Map (to be updated later to a Composite Risk Score map!)
     st.subheader("Overall PM2.5 Exposure by Census Tract")
+    st.write("This map shows long-term average PM2.5 AQI by census tract using data from 49 sensors.")
+
+    # Visualize the data with map (If you could make it a heatmap, that would be great)
+    # NOTE: I added a library (`st_folium`) to visualize the map you created with Folium
+
+    # Load and process data
+    # Load the datasets
+    clarity = pd.read_csv("../data/clean_clarity.csv")
+    purpleair = pd.read_csv("../data/clean_purpleair.csv")
+    health_risk = pd.read_csv("../data/health_risk_index.csv")
+    tracts = gpd.read_file("../data/census.geojson")
+
+    # Find unique locations for clarity monitors
+    clarity_locations = clarity[['longitude', 'latitude']].drop_duplicates().reset_index(drop=True)
+
+    # Find unique locations for purpleair monitors
+    purpleair_locations = purpleair[['longitude', 'latitude']].drop_duplicates().reset_index(drop=True)
+
+    # Combine both sensor datasets into one DataFrame
+    combined = pd.concat([clarity, purpleair], ignore_index=True)
+
+    # Convert combined DataFrame into a GeoDataFrame
+    combined_gdf = gpd.GeoDataFrame(
+        combined,
+        geometry=gpd.points_from_xy(combined.longitude, combined.latitude),
+        crs="EPSG:4326"
+    )
+    
     st.write(
         "This map shows the combined long-term average PM2.5 AQI for each census tract, using data from 14 Clarity sensors and 27 PurpleAir sensors collected between March 30, 2024 and March 31, 2025."
     )
@@ -64,6 +93,11 @@ with tab1:
 
     # Load the GeoDataFrame
     tracts_with_data = gpd.read_file(geojson_path)
+
+    # Add in health risk
+    health_risk["geoid"] = "06081" + (health_risk["tract"] * 100).astype(int).astype(str)
+    tracts_with_data = tracts_with_data.merge(health_risk, on="geoid")
+    tracts_with_data["risk_index"] = health_weight * tracts_with_data["Health Risk Index"] + air_weight * tracts_with_data["combined_aqi"]
 
     # Set map center (based on actual data)
     center = tracts_with_data.geometry.centroid.unary_union.centroid
@@ -94,7 +128,7 @@ with tab1:
         folium.Choropleth(
             geo_data=tracts_with_data,
             data=tracts_with_data,
-            columns=["geoid", "combined_aqi"],
+            columns=["geoid", "risk_index"],
             key_on="feature.properties.geoid",
             fill_color="YlOrRd",
             fill_opacity=0.8,
