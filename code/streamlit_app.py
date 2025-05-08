@@ -60,8 +60,8 @@ with tab1:
     st.write(f"❤️ **Health Risk Weight:** {health_weight}%")
 
     # Map (to be updated later to a Composite Risk Score map!)
-    st.subheader("Overall PM2.5 Exposure by Census Tract")
-    st.write("This map shows long-term average PM2.5 AQI by census tract using data from 49 sensors.")
+    st.subheader("Overall Risk Score by Census Tract")
+    st.write("This map shows the overall air quality and health risk by census tract using data from 41 sensors.")
 
     # Visualize the data with map (If you could make it a heatmap, that would be great)
     # NOTE: I added a library (`st_folium`) to visualize the map you created with Folium
@@ -154,13 +154,13 @@ with tab1:
             tracts_with_data,
             tooltip=folium.GeoJsonTooltip(
                 fields=["geoid", "combined_aqi"],
-                aliases=["Census Tract", "AQI"],
+                aliases=["Census Tract:", "Composite Risk Score"],
                 localize=True,
                 sticky=True
             )
         ).add_to(m)
 
-    # Split Clarity (non-numeric ID) vs PurpleAir (numeric ID)
+    # Redefine clarity and purpleair locations for the map
     clarity_locations = pred_df[~pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
     purpleair_locations = pred_df[pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
 
@@ -227,12 +227,29 @@ with tab1:
     st.title("Insights & Interpretation")
 
     st.info("""
-    - This map shows combined PM2.5 Air Quality Index (AQI) scores by census tract in South San Francisco and San Bruno.
-    - Census tracts are shaded from light to dark to represent increasing levels of long-term PM2.5 exposure.
-    - The AQI for each census tract is based on measurements from two types of air monitors: Clarity and PurpleAir.
-    - Each monitor reports daily PM2.5 concentrations, which we converted to AQI scores using EPA standards. For each census tract, we computed the median AQI from all available Clarity and PurpleAir data within the period from March 30, 2024, to March 31, 2025.
-    - We then combined the Clarity and PurpleAir AQI scores using fixed weights (~76% Clarity and ~24% PurpleAir) to reflect the higher accuracy of Clarity monitors. If only one source had data for a tract, that data was used as-is.
-    - The result is a weighted, median-based AQI score for each tract, helping identify areas with higher long-term air pollution exposure.
+    ### 🧪 Composite Risk Score
+
+    This map displays a **composite air and health risk score** for each census tract in South San Francisco and San Bruno.  
+    **Darker shading** indicates **higher overall risk** in a given tract.  
+
+    The score combines two parts:  
+    - An **air quality risk score**, calculated from daily PM2.5 concentrations reported by Clarity and PurpleAir monitors. These values are converted into **Air Quality Index (AQI)** scores using EPA standards.  
+    - A **health risk score**, which integrates **health equity data** along with **general and respiratory health metrics** to identify communities more vulnerable to air pollution.  
+
+    The final score is a **weighted combination** of the two, highlighting areas where both pollution levels and health vulnerabilities are high.
+    """)
+
+    st.info("""
+    ### 📡 Monitor Predictability Index
+
+    The map also shows the locations of **air quality monitors**, each marked with a **predictability index**.  
+    This index reflects how **reliably a monitor's readings can be predicted** using historical data and nearby monitors.  
+
+    It is calculated using a combination of:  
+    - **Self-predictability** — how well a monitor's past data can forecast its future readings.  
+    - **Cross-predictability** — how well nearby monitors can be used to predict a monitor's readings.  
+
+    A **higher predictability index** suggests more stable or consistent readings, while **lower scores** may indicate irregular behavior or localized factors affecting air quality.
     """)
 
 # --- Additional Information Tab ---
