@@ -155,7 +155,7 @@ with tab1:
             tracts_with_data,
             tooltip=folium.GeoJsonTooltip(
                 fields=["geoid", "risk_index"],
-                aliases=["Census Tract:", "Composite Risk Score"],
+                aliases=["Census Tract:", "Composite Risk Score:"],
                 localize=True,
                 sticky=True
             )
