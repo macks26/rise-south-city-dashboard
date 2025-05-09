@@ -103,7 +103,7 @@ with tab1:
     health_risk["geoid"] = "06081" + (health_risk["tract"] * 100).astype(int).astype(str)
     tracts_with_data = tracts_with_data.merge(health_risk, on="geoid")
     tracts_with_data["risk_index"] = health_weight * tracts_with_data["Health Risk Index"] + air_weight * (tracts_with_data["combined_aqi"] / tracts_with_data["combined_aqi"].max())
-    tracts_with_data["risk_index"] = int(tracts_with_data["risk_index"].round(0))
+    tracts_with_data["risk_index"] = tracts_with_data["risk_index"].round(0).astype(int)
 
     # Set map center (based on actual data)
     center = tracts_with_data.geometry.centroid.unary_union.centroid
