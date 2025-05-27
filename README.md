@@ -97,4 +97,4 @@ See [LICENSE](LICENSE) for details.
 
 ## Contact
 
-For questions concerning deployment or any of the documentation/code provided, email macks26@stanford.edu
+For questions concerning deployment or any of the documentation/code provided, email macks26@stanford.edu, ikrement@stanford.edu, or enkhjin@stanford.edu.
