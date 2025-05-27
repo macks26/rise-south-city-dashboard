@@ -1,3 +1,7 @@
+### In order to deploy the dashboard onto Streamlit Cloud, we need to specify
+### what needs to be imported by for the application to be fully operable.
+### This file includes those imports.
+
 # Python version (used by some platforms like Streamlit Cloud in runtime.txt instead)
 # If needed in a separate runtime.txt file, use: python-3.10.16
 

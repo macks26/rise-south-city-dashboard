@@ -1,3 +1,17 @@
+"""
+PurpleAir PM2.5 and Air Traffic Trend Comparison
+
+This script visualizes the relationship between air pollution and airport traffic over time.
+
+It performs the following steps:
+- Loads and preprocesses monthly PM2.5 data from PurpleAir sensors.
+- Loads and aggregates monthly air traffic passenger counts.
+- Merges both datasets for the period Dec 2018 to Dec 2023.
+- Generates a dual-axis time series plot to compare trends.
+
+The resulting chart helps explore potential associations between air quality and air traffic volume.
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 
