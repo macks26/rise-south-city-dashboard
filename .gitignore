@@ -1,1 +1,6 @@
 shapefiles/
+.ipynb_checkpoints/
+.devcontainer/
+code/.ipynb_checkpoints
+code/__pycache__
+code/.DS_Store
