@@ -1,3 +1,18 @@
+"""
+Sensor Data Weighting for Air Quality Risk Index
+
+This script loads and compares air pollution data from two monitoring sources: Clarity and PurpleAir.
+
+It performs the following steps:
+- Loads pre-cleaned PM2.5 data from both sources.
+- Merges data by timestamp and location to identify overlapping measurements.
+- Filters to rows with valid PM2.5 readings from both sources.
+- Calculates the variance of each source's PM2.5 measurements at overlapping points.
+- Computes inverse variance weights to quantify the relative reliability of each source.
+
+These weights can be used to combine sensor readings into a more accurate estimate of local air quality.
+"""
+
 import pandas as pd
 
 # Load cleaned Clarity and PurpleAir data

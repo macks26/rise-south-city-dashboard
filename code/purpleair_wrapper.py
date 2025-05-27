@@ -1,8 +1,17 @@
-# Author: Mack Smith
+"""
+PurpleAir API Wrapper Class
 
-# Description: An interface to the PurpleAir API.
-# This module provides a wrapper around the PurpleAir API to fetch and process air quality data. It includes functions 
-# to get the latest data for specific sensors or retrieve historical data for a list of sensors.
+Provides a Python interface for interacting with the PurpleAir API.
+
+It includes:
+- Initialization with API key handling.
+- Methods to fetch latest sensor data by index.
+- Retrieval of historical PM2.5 data for multiple sensors.
+- Support for bounding box queries or filtering by sensor indices.
+- Formatting of API responses into pandas DataFrames.
+
+Designed for clean integration of PurpleAir data into air quality pipelines and analyses.
+"""
 
 import requests
 import pandas as pd

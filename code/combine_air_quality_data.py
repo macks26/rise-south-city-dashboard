@@ -1,3 +1,19 @@
+"""
+Census Tract-Level AQI Aggregation from Clarity and PurpleAir Data
+
+This script calculates median air quality index (AQI) values for each census tract using PM2.5 data from Clarity and PurpleAir sensors.
+
+It performs the following steps:
+- Loads cleaned PM2.5 and census tract data.
+- Filters sensor data to a defined date range.
+- Assigns each sensor reading to its corresponding census tract.
+- Computes median AQI per tract from each sensor network.
+- Combines AQIs using inverse variance weights.
+- Outputs both a GeoJSON and CSV with tract-level AQI estimates.
+
+The result supports spatial analysis of air quality across South San Francisco and San Bruno.
+"""
+
 import pandas as pd
 import geopandas as gpd
 import numpy as np

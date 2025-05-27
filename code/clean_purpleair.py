@@ -1,3 +1,18 @@
+"""
+PurpleAir Data Integration and AQI Processing
+
+This script merges and processes PM2.5 data from multiple PurpleAir sources for comprehensive air quality analysis.
+
+It performs the following steps:
+- Loads hourly, daily, and API-based sensor data.
+- Cleans and standardizes timestamps, locations, and pollutant readings.
+- Calculates 24-hour averages and corresponding AQI values.
+- Merges and combines data from different formats and sources.
+- Outputs a unified, time-sorted dataset for analysis or visualization.
+
+The final result is a cleaned CSV file with PM2.5, AQI, and environmental conditions per sensor.
+"""
+
 import pandas as pd
 
 # Load hourly, daily, and PurpleAir API data 

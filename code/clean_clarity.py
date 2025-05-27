@@ -1,3 +1,18 @@
+"""
+Clarity Data Processing for PM2.5 and AQI Analysis
+
+This script prepares hourly PM2.5 data from Clarity monitors for use in air quality analysis.
+
+It performs the following steps:
+- Loads raw hourly data and converts timestamps to Pacific time.
+- Selects and renames relevant columns for clarity.
+- Computes daily 24-hour PM2.5 averages per sensor.
+- Calculates AQI based on daily PM2.5 concentrations.
+- Cleans and organizes the final dataset.
+
+The result is a daily air quality dataset exported as a clean CSV.
+"""
+
 import pandas as pd
 
 # Load Clarity data
