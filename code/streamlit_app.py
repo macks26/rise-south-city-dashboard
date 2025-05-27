@@ -145,7 +145,7 @@ with tab1:
             data=tracts_with_data,
             columns=["geoid", "risk_index"],
             key_on="feature.properties.geoid",
-            fill_color="YlOrRd",
+            filcolor="YlOrRd",
             fill_opacity=0.8,
             line_opacity=0.5
         ).add_to(m)
