@@ -94,3 +94,7 @@ This project is for educational and community use.
 See [LICENSE](LICENSE) for details.
 
 ---
+
+## Contact
+
+For questions concerning deployment or any of the documentation/code provided, email macks26@stanford.edu
