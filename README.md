@@ -37,7 +37,7 @@ This repository contains the code and data for the **Rise South City Community D
 │   └── ...                             # Other data files
 ├── figures/
 │   └── ...                             # Images and figures for the dashboard
-├── requirements.txt                    # Python dependencies
+├── requirements.txt                    # Python dependencies for streamlit app
 ├── .devcontainer/
 │   └── devcontainer.json               # VS Code Dev Container config (optional)
 └── README.md                           # This file
