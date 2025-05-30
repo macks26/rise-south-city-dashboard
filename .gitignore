@@ -1,7 +1,5 @@
-shapefiles/
-.ipynb_checkpoints/
+code/.ipynb_checkpoints/
 .devcontainer/
-code/__pycache__
+code/__pycache__/
 code/.DS_Store
 .DS_Store
-**/.ipynb_checkpoints

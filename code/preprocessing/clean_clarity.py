@@ -16,7 +16,7 @@ The result is a daily air quality dataset exported as a clean CSV.
 import pandas as pd
 
 # Load Clarity data
-clarity = pd.read_csv("risesouthcity_april_hourly.csv", parse_dates=["startOfPeriod"])
+clarity = pd.read_csv("data/risesouthcity_april_hourly.csv", parse_dates=["startOfPeriod"])
 
 # Convert to Pacific timezone and strip tz info
 clarity["startOfPeriod"] = pd.to_datetime(clarity["startOfPeriod"], utc=True)
