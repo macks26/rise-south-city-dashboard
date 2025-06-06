@@ -2,33 +2,38 @@
 
 This folder contains all scripts and notebooks used to process, analyze, and visualize data for the Rise South City Community Dashboard.
 
-## Structure & Key Files
+## Folder Structure & Key Files
 
-### air_quality/
-- `calculate_sensor_weights.py` – Calculates weights to combine Clarity and PurpleAir PM2.5 data based on their reliability in measuring air pollution risk.
-- `clarity_midproject.ipynb` – Exploratory data analysis of Clarity sensor readings for mid-project report.
+### `air_quality/`
+- `calculate_sensor_weights.py` – Computes source weights for combining Clarity and PurpleAir PM2.5 data based on co-located sensor comparisons.
+- `combine_air_quality_data.py` – Merges daily PM2.5 data by census tract using spatial joins and time filtering.
 
-### health/
-- `data_analysis_geo.ipynb` – Spatial analysis of health indicators and health risk by geography.
-- `health.ipynb` – Main notebook for exploring and modeling health-related risk data for computing health-risk score.
+### `health/`
+- `health.ipynb` – Calculates the Health Risk Index (HRI) using indicators of health equity and respiratory vulnerability.
 - `health_preproc.ipynb` – Notebook to clean and reshape health risk datasets.
 
-### predictability/
-- `predictability.ipynb` – Computes and visualizes the predictability and consistency of air monitors.
-- `visualize_pred_midproject.py` – Visualization tool for predictability of air monitors for the mid-project report.
+### `predictability/`
+- `predictability.ipynb` – Computes consistency and predictability scores for air quality monitors using Random Forest models and neighbor-based inference.
 
-### preprocessing/
-- `clean_air_data.ipynb` – Notebook for cleaning and aligning raw air data sources.
-- `clean_api_purpleair.ipynb` – Preprocessing PurpleAir API data in notebook form.
-- `clean_clarity.py` – Script for cleaning Clarity sensor data.
-- `clean_purpleair.py` – Script for cleaning PurpleAir sensor data.
-- `combine_air_quality_data.py` – Merges air quality sources into a single composite dataset.
-- `purpleair_wrapper.py` – Helper functions to query and process PurpleAir API data.
+### `preprocessing/`
+- `clean_api_purpleair.ipynb` – Cleans PurpleAir API data and transforms it into daily averages.
+- `clean_clarity.py` – Cleans Clarity sensor data and handles invalid values.
+- `clean_purpleair.py` – Processes historical PurpleAir datasets.
+- `combine_air_quality_data.py` – Aggregates and merges air quality data by tract and time period.
+- `purpleair_wrapper.py` – Automates data retrieval from the PurpleAir API.
+
+### `additional/`
+- `uninsured.ipynb` – Analyzes the relationship between air quality monitor placement and the percentage of uninsured residents.
+- `uninsured_clarity.ipynb` – Focused analysis of Clarity sensors and health vulnerability based on insurance access.
+- `visualize_air_traffic.py` – Visualizes trends in PM2.5 in relation to airport passenger traffic for the Additional Information tab in the dashboard.
 
 ### Root Files
-- `streamlit_app.py` – Main script for launching the Streamlit dashboard.
-- `visualize_air_traffic.py` – Visualizes aircraft traffic in the area for contextual analysis.
+- `streamlit_app.py` – Main Streamlit app for the dashboard. Located at the root level.
 
 ---
 
-All files are organized by theme: air quality, health, predictability, and preprocessing. Final dashboard functionality is tied together in `streamlit_app.py`.
+## Notes
+
+- Files are grouped by functionality: air quality processing, health scoring, predictability modeling, visualization, and dashboard integration.
+- Notebooks and scripts in `additional/` are used to generate visualizations for the dashboard’s Additional Information tab.
+- See the project documentation for full methodology and the suggested execution order.
