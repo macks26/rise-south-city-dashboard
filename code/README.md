@@ -11,6 +11,7 @@ This folder contains all scripts and notebooks used to process, analyze, and vis
 ### health/
 - `data_analysis_geo.ipynb` – Spatial analysis of health indicators and health risk by geography.
 - `health.ipynb` – Main notebook for exploring and modeling health-related risk data for computing health-risk score.
+- `health_preproc.ipynb` – Notebook to clean and reshape health risk datasets.
 
 ### predictability/
 - `predictability.ipynb` – Computes and visualizes the predictability and consistency of air monitors.
@@ -22,7 +23,6 @@ This folder contains all scripts and notebooks used to process, analyze, and vis
 - `clean_clarity.py` – Script for cleaning Clarity sensor data.
 - `clean_purpleair.py` – Script for cleaning PurpleAir sensor data.
 - `combine_air_quality_data.py` – Merges air quality sources into a single composite dataset.
-- `health_preproc.ipynb` – Notebook to clean and reshape health risk datasets.
 - `purpleair_wrapper.py` – Helper functions to query and process PurpleAir API data.
 
 ### Root Files
