@@ -20,9 +20,6 @@ import folium
 from streamlit_folium import st_folium   
 from geopy.geocoders import Nominatim 
 from geopy.distance import geodesic  
-# Translation
-#from gettext import _
-
 # Page Config
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
 
@@ -32,40 +29,134 @@ pred_df = pd.read_csv("data/combined_scores.csv")
 # Tabs
 tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
 
+# Todo for future groups: Automate the translation process (+add more languages) using a package such as gettext (along with polib)
+languages = ['en', 'es']
+language = languages[0]
+
+translations = {
+    'es': {
+        "Select Language": "Cambiar Idioma",
+        "Neighborhood Risk Map": "Mapa de Riesgo Vecinal",
+        "See how air quality and health risk vary across neighborhoods. Adjust the balance below to update the map.": "Ver como se varia la calidad del aire y riesgo de salud por vecinos. Ajusta el equilibrio debajo para actualizar la mapa.",
+        "Adjust Map Risk Balance": "Ajustar el Equilibrio de Riesgo de la Mapa",
+        "Use the options below to choose how much the map should focus on air quality or health factors.": "Usa las opciones debajo para elegir cuanto debe enfocar en calidad del aire o factores de salud la mapa.",
+        "Pick a balance:": "Elige un equilibrio:",
+        "Even (50% Air, 50% Health)": "Igualado (50% Aire, 50% Salud)",
+        "More Air (70% Air, 30% Health)": "Más Aire (70% Aire, 30% Salud)",
+        "More Health (30% Air, 70% Health)": "Más Salud (30% Aire, 70% Salud)",
+        "Custom": "Personalizado",
+        "Air Quality Weight (%)": "Ponderación de la calidad del aire",
+        "Slide right for more air quality, left for more health.": "Desliza a la derecha para más ponderación a la calidad del aire, a la izquierda para más ponderación a la salud",
+        "Air Quality": "Calidad del Aire",
+        "Health": "Salud",
+        "Search by Address": "Buscar por Dirección",
+        "Enter a street address (e.g., 123 Main St):": "Poner un dirección (ej. 123 Main St):",
+        "Geocoding error": "Error de geocodificación",
+        "Address not found. Please try again.": "No se encuentra a tu dirección. Por favor intenta otra vez.",
+        "Composite Risk Score": "Índice de Riesgo Compuesto",
+        "Census Tract": "Tramo Censal",
+        "Predictability Index": "Índice de Predictibilidad",
+        "Address": "Dirección",
+        "Insights & Interpretation": "Conocimientos & Interpretación", """
+    ### 🧪 Composite Risk Score
+
+    This map displays a **composite air and health risk score** for each census tract in South San Francisco and San Bruno.  
+    **Darker shading** indicates **higher overall risk** in a given tract.  
+
+    The score combines two parts:  
+    - An **air quality risk score**, calculated from daily PM2.5 concentrations reported by Clarity and PurpleAir monitors. These values are converted into **Air Quality Index (AQI)** scores using EPA standards.  
+    - A **health risk score**, which integrates **health equity data** along with **general and respiratory health metrics** to identify communities more vulnerable to air pollution.  
+
+    The final score is a **weighted combination** of the two, highlighting areas where both pollution levels and health vulnerabilities are high.
+    """: """
+    ### 🧪 Índice de Riesgo Compuesto
+
+    Esta mapa se exhiba un índice compuesto de la calidad del aire y la salud por cada tramo censal en South San Francisco y San Bruno.  
+    **Tono oscuro** se indica **riesgo mayor en general** en el tramo dado.  
+
+    Este índice se mezcla dos partes:  
+    - Un **índice de riesgo de la calidad del aire**, calculado por concentraciónes de PM2.5 diarias reportado por Clarity y PurpleAir monitores. Estes números se convierten al **Índice de Calidad del Aire (AQI)** con las normas de la EPA.  
+    - Un **índice de riesgo a la salud**, que se incorpora **datos de justicia de salud** junto con **métricos de salud general y respiratorio** para identificar comunidades que son más vulnerables a la pollución del aire.  
+
+    El número final es una **suma ponderada** de las dos, que destaca áreas donde las niveles de la pollución y vulnerabilidades de salud son elevados.
+    """, """
+    ### 📡 Monitor Predictability Index
+
+    The map also shows the locations of **air quality monitors**, each marked with a **predictability index**.  
+    This index reflects how **reliably a monitor's readings can be predicted** using historical data and nearby monitors.  
+
+    It is calculated using a combination of:  
+    - **Self-predictability** — how well a monitor's past data can forecast its future readings.  
+    - **Cross-predictability** — how well nearby monitors can be used to predict a monitor's readings.  
+
+    A **higher predictability index** suggests more stable or consistent readings, while **lower scores** may indicate irregular behavior or localized factors affecting air quality.
+    """: """
+    ### 📡 Índice de Predictibilidad de los Monitores
+
+    La mapa también se muestra las ubicaciónes de las **monitores de calidad del aire**, cada marcado con un **índice de predictibildad**.  
+    Este índice se refleja **qué tan bien podemos pronosticar las lecturas del monitor** usando datos históricos y monitores cercanos.  
+
+    Se calcula usando una mezcla de:  
+    - **Autopredictibilidad** — Qué tan bien le puede pronosticar a las lecturas futuros los datos históricos del monitor.  
+    - **Predictibilidad Cruzada** — Que tan bien le puede pronosticar a las lecturas de un monitor los datos de los monitores cercanos.
+
+    Un **índice de predictibilidad más alto** sugiere a más estabilidad y regularidad de las lecturas del monitor, mientras **índices más bajos** quizás indican funcionamiento irregular o factores locales que se afectan la calidad del aire.
+    """,
+        "Additional Information": "Información Adicional",
+        "This section provides additional figures and context for environmental and health analysis.": "Esta sección se muestra figuras y contexto para analisís ambiental y de la salud.",
+        "PM2.5 and Airport Traffic Timeline: This visualization displays monthly passenger traffic at San Francisco International Airport (bottom, January 2018 to December 2024). The sharp drop in air travel during the early months of the COVID-19 pandemic (2020) aligned with a noticeable decline in PM2.5 levels, suggesting that reduced airport operations may have improved local air quality. As air traffic rebounded in 2021 and beyond, PM2.5 concentrations also rose, pointing to a potential connection between flight activity and pollution levels. However, a late-2020 spike in PM2.5 was likely driven by wildfires, underscoring that airport emissions are just one piece of a larger puzzle. This natural experiment — where travel volume changed drastically while other factors held steady — offers a rare opportunity to isolate the airport’s contribution to regional air pollution. For communities near SFO, who already face multiple environmental and socioeconomic stressors, understanding this relationship is vital. These insights can inform targeted air quality interventions, regulatory strategies, and long-term planning to reduce the cumulative burden of pollution.": "",
+        "Sensor Predictability over Percentage Uninsured: The two figures above show sensor locations (Purple and Clarity, respectively), along with a predictability index for each sensor, correlations between sensor readings, and ACS estimates of percentage uninsured for the census tracts in which the sensors were located. The 'predictability index' here is simply the maximum correlation that a sensor had with any others, intended to illustrate possible sensor redundancies. In areas where sensors are highly redundant — that is, another sensor's data can be used to accurately predict hourly readings — there may be less of a need for more nearby sensors. This is overlaid on the percentage of uninsured residents in each tract to highlight areas where people may be most vulnerable to the health effects of air pollution. Those who are uninsured cannot easily access the treatments that would help them recover from, or maintain resilience to, poor air quality. Overall, the purpose of this figure is to show where additional air sensors are most needed. If an area has low health insurance coverage and low sensor redundancy, it might benefit from the placement of new sensors so that community members can take steps to protect their health.": "Predictibilidad de los monitores encima de Porcentaje sin coberatura: Las figuras de arriba se muestran las ubaciónes de los monitores (Purple y Clarity respectivamente), junto con un índice de predictibilidad rudimentario por cada monitor, correlaciones entre de lecturas de los monitores, y las estimaciones ACS de la porcentaje sin coberatura por los tramos en que habían monitores. El 'índice de predictibilidad' aquí es la correlación máxima que tenía un monitor con todos otros."
+    }
+}
+
+# Translation
+def t(message):
+    if language == languages[0]:
+        return message
+    else:
+        return translations[language][message]
+
 # Risk Analysis Tab
 with tab1:
-    # Map Section
-    st.title("Neighborhood Risk Map")
-    st.write("See how air quality and health risk vary across neighborhoods. Adjust the balance below to update the map.")
-    
-    # Composite Risk Score Weights
-    st.subheader("Adjust Map Risk Balance")
-
-    st.markdown(
-        "Use the options below to choose how much the map should focus on air quality or health factors."
+    # Language selection
+    language = st.selectbox(
+        label=t("Select Language"),
+        options=["en", "es"]
     )
 
+    # Map Section
+    st.title(t("Neighborhood Risk Map"))
+    st.write(t("See how air quality and health risk vary across neighborhoods. Adjust the balance below to update the map."))
+    
+    # Composite Risk Score Weights
+    st.subheader(t("Adjust Map Risk Balance"))
+
+    st.markdown(
+        t("Use the options below to choose how much the map should focus on air quality or health factors.")
+    )
+
+    opts = [t("Even (50% Air, 50% Health)"), t("More Air (70% Air, 30% Health)"), t("More Health (30% Air, 70% Health)"), t("Custom")]
     preset = st.radio(
-        "Pick a balance:",
-        ["Even (50% Air, 50% Health)", "More Air (70% Air, 30% Health)", "More Health (30% Air, 70% Health)", "Custom"],
+        t("Pick a balance:"),
+        opts,
         index=0
     )
 
-    if preset == "Even (50% Air, 50% Health)":
+    if preset == opts[1]:
         air_weight = 50
-    elif preset == "More Air (70% Air, 30% Health)":
+    elif preset == opts[2]:
         air_weight = 70
-    elif preset == "More Health (30% Air, 70% Health)":
+    elif preset == opts[3]:
         air_weight = 30
     else:
         air_weight = st.slider(
-            "Air Quality Weight (%)", 0, 100, 50,
-            help="Slide right for more air quality, left for more health."
+            t("Air Quality Weight (%)"), 0, 100, 50,
+            help=t("Slide right for more air quality, left for more health.")
         )
 
     health_weight = 100 - air_weight
 
-    st.write(f"**Air Quality:** {air_weight}%   |   **Health:** {health_weight}%")
+    st.write(f"**{t('Air Quality')}:** {air_weight}%   |   **{t('Health')}:** {health_weight}%")
     
     # Load and process data for map
     clarity = pd.read_csv("data/clean_clarity.csv")
@@ -99,8 +190,8 @@ with tab1:
     map_center = [center.y, center.x]
 
     # Address Search
-    st.subheader("Search by Address")
-    search_query = st.text_input("Enter a street address (e.g., 123 Main St):")
+    st.subheader(t("Search by Address"))
+    search_query = st.text_input(t("Enter a street address (e.g., 123 Main St):"))
     marker_coords = None
     zoom_level = 12
 
@@ -111,7 +202,7 @@ with tab1:
         try:
             return geolocator.geocode(address)
         except Exception as e:
-            st.error(f"Geocoding error: {e}")
+            st.error(f"{t('Geocoding error')}: {e}")
             return None
         
     if search_query:
@@ -123,7 +214,7 @@ with tab1:
             map_center = marker_coords
             zoom_level = 14
         else:
-            st.warning("Address not found. Please try again.")
+            st.warning(t("Address not found. Please try again."))
 
     # Folium Map Creation 
     m = folium.Map(location=map_center, zoom_start=zoom_level, tiles="cartodbpositron")
@@ -131,7 +222,7 @@ with tab1:
     if tracts_with_data is not None and not tracts_with_data.empty:
         # Choropleth layer using continuous color scale
         risk_colormap = cm.linear.YlOrRd_09.scale(0, 1)
-        risk_colormap.caption = "Composite Risk Score"
+        risk_colormap.caption = t("Composite Risk Score")
 
         def style_function(feature):
             risk = feature["properties"]["risk_index"]
@@ -144,11 +235,11 @@ with tab1:
 
         folium.GeoJson(
             tracts_with_data,
-            name="Composite Risk Score",
+            name=t("Composite Risk Score"),
             style_function=style_function,
             tooltip=folium.GeoJsonTooltip(
                 fields=["geoid", "risk_index"],
-                aliases=["Census Tract:", "Composite Risk Score:"],
+                aliases=[f"{t('Census Tract')}:", f"{t('Composite Risk Score')}:"],
                 localize=True,
                 sticky=True
             )
@@ -164,7 +255,7 @@ with tab1:
     min_val = pred_df['predictability_index'].min()
     max_val = pred_df['predictability_index'].max()
     color_scale = cm.linear.PuBuGn_09.scale(min_val, max_val).to_step(n=10)
-    color_scale.caption = "Predictability Index"
+    color_scale.caption = t("Predictability Index")
 
     # Function to add monitor markers to map
     def add_monitors(df, label):
@@ -178,7 +269,7 @@ with tab1:
                 fill=True,
                 fill_color=color,
                 fill_opacity=0.7,
-                tooltip=f"{label} Monitor<br>Predictability Index: {int(predictability)}%"
+                tooltip=f"{label} Monitor<br>{t('Predictability Index')}: {int(predictability)}%"
             ).add_to(m)
 
     add_monitors(clarity_locations, "Clarity")
@@ -203,7 +294,7 @@ with tab1:
             predicted_index = round(predicted_index, 0)
             folium.Marker(
                 location=marker_coords,
-                tooltip=f"<b>Address:</b> {search_query}<br><b>Predictability Index:</b> {int(predicted_index)}%",
+                tooltip=f"<b>{t('Address')}:</b> {search_query}<br><b>{t('Predictability Index')}:</b> {int(predicted_index)}%",
                 icon=folium.Icon(color="red", icon="map-pin", prefix="fa")
             ).add_to(m)
 
@@ -211,9 +302,9 @@ with tab1:
     st_folium(m, use_container_width=True, height=700)
 
     # Insights & Interpretation 
-    st.title("Insights & Interpretation")
+    st.title(t("Insights & Interpretation"))
 
-    st.info("""
+    st.info(t("""
     ### 🧪 Composite Risk Score
 
     This map displays a **composite air and health risk score** for each census tract in South San Francisco and San Bruno.  
@@ -224,9 +315,9 @@ with tab1:
     - A **health risk score**, which integrates **health equity data** along with **general and respiratory health metrics** to identify communities more vulnerable to air pollution.  
 
     The final score is a **weighted combination** of the two, highlighting areas where both pollution levels and health vulnerabilities are high.
-    """)
+    """))
 
-    st.info("""
+    st.info(t("""
     ### 📡 Monitor Predictability Index
 
     The map also shows the locations of **air quality monitors**, each marked with a **predictability index**.  
@@ -237,20 +328,20 @@ with tab1:
     - **Cross-predictability** — how well nearby monitors can be used to predict a monitor's readings.  
 
     A **higher predictability index** suggests more stable or consistent readings, while **lower scores** may indicate irregular behavior or localized factors affecting air quality.
-    """)
+    """))
 
 # Additional Information Tab
 with tab2:
-    st.title("Additional Information")
-    st.write("This section provides additional figures and context for environmental and health analysis.")
+    st.title(t("Additional Information"))
+    st.write(t("This section provides additional figures and context for environmental and health analysis."))
 
     # Display air traffic and PM2.5 timeline figure
     st.image('figures/air_traffic.png')
-    st.info('PM2.5 and Airport Traffic Timeline: This visualization displays monthly passenger traffic at San Francisco International Airport (bottom, January 2018 to December 2024). The sharp drop in air travel during the early months of the COVID-19 pandemic (2020) aligned with a noticeable decline in PM2.5 levels, suggesting that reduced airport operations may have improved local air quality. As air traffic rebounded in 2021 and beyond, PM2.5 concentrations also rose, pointing to a potential connection between flight activity and pollution levels. However, a late-2020 spike in PM2.5 was likely driven by wildfires, underscoring that airport emissions are just one piece of a larger puzzle. This natural experiment — where travel volume changed drastically while other factors held steady — offers a rare opportunity to isolate the airport’s contribution to regional air pollution. For communities near SFO, who already face multiple environmental and socioeconomic stressors, understanding this relationship is vital. These insights can inform targeted air quality interventions, regulatory strategies, and long-term planning to reduce the cumulative burden of pollution.')
+    st.info(t('PM2.5 and Airport Traffic Timeline: This visualization displays monthly passenger traffic at San Francisco International Airport (bottom, January 2018 to December 2024). The sharp drop in air travel during the early months of the COVID-19 pandemic (2020) aligned with a noticeable decline in PM2.5 levels, suggesting that reduced airport operations may have improved local air quality. As air traffic rebounded in 2021 and beyond, PM2.5 concentrations also rose, pointing to a potential connection between flight activity and pollution levels. However, a late-2020 spike in PM2.5 was likely driven by wildfires, underscoring that airport emissions are just one piece of a larger puzzle. This natural experiment — where travel volume changed drastically while other factors held steady — offers a rare opportunity to isolate the airport’s contribution to regional air pollution. For communities near SFO, who already face multiple environmental and socioeconomic stressors, understanding this relationship is vital. These insights can inform targeted air quality interventions, regulatory strategies, and long-term planning to reduce the cumulative burden of pollution.'))
     
     # Display sensor predictability and uninsured percentage figures
     st.image(['figures/predictability/clarity_predictability.png', 'figures/predictability/clarity_corrs.png'])
-    st.info("Sensory Predictability over Percentage Uninsured: The two figures above show sensor locations (Purple and Clarity, respectively), along with a predictability index for each sensor, correlations between sensor readings, and ACS estimates of percentage uninsured for the census tracts in which the sensors were located. The 'predictability index' here is simply the maximum correlation that a sensor had with any others, intended to illustrate possible sensor redundancies. In areas where sensors are highly redundant — that is, another sensor's data can be used to accurately predict hourly readings — there may be less of a need for more nearby sensors. This is overlaid on the percentage of uninsured residents in each tract to highlight areas where people may be most vulnerable to the health effects of air pollution. Those who are uninsured cannot easily access the treatments that would help them recover from, or maintain resilience to, poor air quality. Overall, the purpose of this figure is to show where additional air sensors are most needed. If an area has low health insurance coverage and low sensor redundancy, it might benefit from the placement of new sensors so that community members can take steps to protect their health.")
+    st.info(t("Sensor Predictability over Percentage Uninsured: The two figures above show sensor locations (Purple and Clarity, respectively), along with a predictability index for each sensor, correlations between sensor readings, and ACS estimates of percentage uninsured for the census tracts in which the sensors were located. The 'predictability index' here is simply the maximum correlation that a sensor had with any others, intended to illustrate possible sensor redundancies. In areas where sensors are highly redundant — that is, another sensor's data can be used to accurately predict hourly readings — there may be less of a need for more nearby sensors. This is overlaid on the percentage of uninsured residents in each tract to highlight areas where people may be most vulnerable to the health effects of air pollution. Those who are uninsured cannot easily access the treatments that would help them recover from, or maintain resilience to, poor air quality. Overall, the purpose of this figure is to show where additional air sensors are most needed. If an area has low health insurance coverage and low sensor redundancy, it might benefit from the placement of new sensors so that community members can take steps to protect their health."))
 
 # --- Footer ---
 st.markdown("---")
