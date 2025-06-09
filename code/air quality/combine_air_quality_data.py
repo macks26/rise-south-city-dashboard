@@ -97,6 +97,17 @@ tracts_with_combined = tracts_with_combined[
     tracts_with_combined[['clarity_aqi', 'purpleair_aqi', 'combined_aqi']].notnull().any(axis=1)
 ]
 
+# Fill in AQI for tracts where there are no sensors
+make_geoid = lambda t: "06081" + t
+mean_aqi = lambda tracts: tracts_with_combined.loc[tracts_with_combined["geoid"].isin(list(map(make_geoid, tracts))), "combined_aqi"].mean()
+
+fillin_df = gpd.GeoDataFrame({
+    "geoid": ["06081604104", "06081604103"],
+    "combined_aqi": [mean_aqi(["604200", "604102", "604000"]), mean_aqi(["604104", "603900", "604200"])],
+    "geometry": [tracts.loc[tracts["geoid"] == make_geoid("604104"), "geometry"].values[0], tracts.loc[tracts["geoid"] == make_geoid("604103"), "geometry"].values[0]]
+})
+tracts_with_combined = pd.concat([tracts_with_combined, fillin_df])
+
 # Save outputs
 tracts_with_combined.to_file("../data/tracts_with_combined_aqi.geojson", driver="GeoJSON")
 tracts_with_combined[['geoid', 'clarity_aqi', 'purpleair_aqi', 'combined_aqi']].to_csv(

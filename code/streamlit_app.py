@@ -20,6 +20,8 @@ import folium
 from streamlit_folium import st_folium   
 from geopy.geocoders import Nominatim 
 from geopy.distance import geodesic  
+# Translation
+#from gettext import _
 
 # Page Config
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")

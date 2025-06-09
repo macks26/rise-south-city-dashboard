@@ -10,7 +10,6 @@ This folder contains all scripts and notebooks used to process, analyze, and vis
 
 ### `health/`
 - `health.ipynb` – Calculates the Health Risk Index (HRI) using indicators of health equity and respiratory vulnerability.
-- `health_preproc.ipynb` – Notebook to clean and reshape health risk datasets.
 
 ### `predictability/`
 - `predictability.ipynb` – Computes consistency and predictability scores for air quality monitors using Random Forest models and neighbor-based inference.
@@ -21,6 +20,7 @@ This folder contains all scripts and notebooks used to process, analyze, and vis
 - `clean_purpleair.py` – Processes historical PurpleAir datasets.
 - `combine_air_quality_data.py` – Aggregates and merges air quality data by tract and time period.
 - `purpleair_wrapper.py` – Automates data retrieval from the PurpleAir API.
+- `health_preproc.ipynb` – Notebook to clean and reshape health risk datasets.
 
 ### `additional/`
 - `uninsured.ipynb` – Analyzes the relationship between air quality monitor placement and the percentage of uninsured residents.
