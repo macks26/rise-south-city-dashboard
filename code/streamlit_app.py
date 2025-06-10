@@ -19,7 +19,9 @@ import branca.colormap as cm
 import folium  
 from streamlit_folium import st_folium   
 from geopy.geocoders import Nominatim 
-from geopy.distance import geodesic  
+from geopy.distance import geodesic
+import pickle
+
 # Page Config
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
 
@@ -30,11 +32,11 @@ pred_df = pd.read_csv("data/combined_scores.csv")
 tab1, tab2 = st.tabs(["Risk Analysis", "Additional Information"])
 
 # Todo for future groups: Automate the translation process (+add more languages) using a package such as gettext (along with polib)
-languages = ['en', 'es']
+languages = ['English', 'Español']
 language = languages[0]
 
 translations = {
-    'es': {
+    'Español': {
         "Select Language": "Cambiar Idioma",
         "Neighborhood Risk Map": "Mapa de Riesgo Vecinal",
         "See how air quality and health risk vary across neighborhoods. Adjust the balance below to update the map.": "Ver como se varia la calidad del aire y riesgo de salud por vecinos. Ajusta el equilibrio debajo para actualizar la mapa.",
@@ -55,7 +57,8 @@ translations = {
         "Address not found. Please try again.": "No se encuentra a tu dirección. Por favor intenta otra vez.",
         "Composite Risk Score": "Índice de Riesgo Compuesto",
         "Census Tract": "Tramo Censal",
-        "Predictability Index": "Índice de Predictibilidad",
+        "Predictability Score": "Índice de Predictibilidad",
+        "Consistency Score": "Índice de Consistencia",
         "Address": "Dirección",
         "Insights & Interpretation": "Conocimientos & Interpretación", """
     ### 🧪 Composite Risk Score
@@ -121,7 +124,7 @@ with tab1:
     # Language selection
     language = st.selectbox(
         label=t("Select Language"),
-        options=["en", "es"]
+        options=["English", "Español"]
     )
 
     # Map Section
@@ -247,20 +250,25 @@ with tab1:
 
         risk_colormap.add_to(m)
 
+    # Load model for predictability
+    with open("data/rf_predictability_model.pkl", "rb") as f:
+        rf_model = pickle.load(f)
+
     # Separate Clarity and PurpleAir monitors
-    clarity_locations = pred_df[~pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
-    purpleair_locations = pred_df[pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability_index']]
+    clarity_locations = pred_df[~pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability', 'consistency']]
+    purpleair_locations = pred_df[pred_df['location_id'].str.isnumeric()][['latitude', 'longitude', 'predictability', 'consistency']]
 
     # Create color scale for predictability index
-    min_val = pred_df['predictability_index'].min()
-    max_val = pred_df['predictability_index'].max()
+    min_val = pred_df['predictability'].min()
+    max_val = pred_df['predictability'].max()
     color_scale = cm.linear.PuBuGn_09.scale(min_val, max_val).to_step(n=10)
-    color_scale.caption = t("Predictability Index")
+    color_scale.caption = t("Predictability Score")
 
     # Function to add monitor markers to map
     def add_monitors(df, label):
         for _, row in df.iterrows():
-            predictability = round(row['predictability_index'], 0)
+            predictability = round(row['predictability'], 0)
+            consistency = round(row['consistency'], 0) if not pd.isnull(row['consistency']) else "N/A"
             color = color_scale(predictability)
             folium.CircleMarker(
                 location=[row['latitude'], row['longitude']],
@@ -269,7 +277,7 @@ with tab1:
                 fill=True,
                 fill_color=color,
                 fill_opacity=0.7,
-                tooltip=f"{label} Monitor<br>{t('Predictability Index')}: {int(predictability)}%"
+                tooltip=f"{label} Monitor<br>{t('Predictability Score')}: {int(predictability)}%<br>{t('Consistency Score')}: {int(consistency)}%"
             ).add_to(m)
 
     add_monitors(clarity_locations, "Clarity")
@@ -278,23 +286,32 @@ with tab1:
     # Add legend to map
     color_scale.add_to(m)
 
-    # Add Red Pin for Search Result (if used) 
+    # Add Red Pin for Search Result (if used)
     if marker_coords:
-        # Find 5 closest monitors and estimate predictability index at the address
-        all_monitors = pred_df[['latitude', 'longitude', 'predictability_index']].copy()
+        # Find 5 closest monitors
+        all_monitors = pred_df[['latitude', 'longitude', 'predictability', 'consistency']].copy()
         all_monitors['distance'] = all_monitors.apply(
             lambda row: geodesic((row['latitude'], row['longitude']), marker_coords).miles, axis=1
         )
         closest_monitors = all_monitors.nsmallest(5, 'distance')
+
         if not closest_monitors.empty:
-            closest_monitors = closest_monitors[closest_monitors['distance'] > 0]
-            closest_monitors['weight'] = 1 / closest_monitors['distance']
-            closest_monitors['weighted_index'] = closest_monitors['weight'] * closest_monitors['predictability_index']
-            predicted_index = closest_monitors['weighted_index'].sum() / closest_monitors['weight'].sum()
+            # Build feature row for model
+            feature_row = {}
+            for i, n_row in enumerate(closest_monitors.itertuples(), start=1):
+                feature_row[f'neighbor_{i}_distance'] = n_row.distance
+                feature_row[f'neighbor_{i}_predictability'] = n_row.predictability
+                feature_row[f'neighbor_{i}_consistency'] = n_row.consistency
+
+            feature_df = pd.DataFrame([feature_row])
+
+            # Predict using model
+            predicted_index = rf_model.predict(feature_df)[0]
             predicted_index = round(predicted_index, 0)
+
             folium.Marker(
                 location=marker_coords,
-                tooltip=f"<b>{t('Address')}:</b> {search_query}<br><b>{t('Predictability Index')}:</b> {int(predicted_index)}%",
+                tooltip=f"<b>{t('Address')}:</b> {search_query}<br><b>{t('Predicted Predictability')}:</b> {int(predicted_index)}%",
                 icon=folium.Icon(color="red", icon="map-pin", prefix="fa")
             ).add_to(m)
 
