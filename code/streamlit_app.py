@@ -21,6 +21,7 @@ from streamlit_folium import st_folium
 from geopy.geocoders import Nominatim 
 from geopy.distance import geodesic
 import pickle
+from sklearn.ensemble import RandomForestRegressor
 
 # Page Config
 st.set_page_config(page_title="Rise South City Community Dashboard", layout="wide")
