@@ -12,3 +12,5 @@ branca
 folium
 streamlit-folium
 geopy
+scikit-learn
+pickle
