@@ -336,17 +336,24 @@ with tab1:
     """))
 
     st.info(t("""
-    ### 📡 Monitor Predictability Index
+    ### 📡 Monitor Predictability & Consistency Scores
 
-    The map also shows the locations of **air quality monitors**, each marked with a **predictability index**.  
-    This index reflects how **reliably a monitor's readings can be predicted** using historical data and nearby monitors.  
+    The map shows the locations of **air quality monitors**, each marked with two key scores:
 
-    It is calculated using a combination of:  
-    - **Self-predictability** — how well a monitor's past data can forecast its future readings.  
-    - **Cross-predictability** — how well nearby monitors can be used to predict a monitor's readings.  
+    - **Predictability Score** — how well a monitor’s readings can be predicted using nearby monitors (**cross-predictability**).
+    - **Consistency Score** — how reliably a monitor’s readings are internally stable over time (**self-predictability**).
 
-    A **higher predictability index** suggests more stable or consistent readings, while **lower scores** may indicate irregular behavior or localized factors affecting air quality.
+    These scores are calculated using a combination of:
+
+    - **Consistency (Self-Predictability)** — how well a monitor’s own past data can forecast its future readings.
+    - **Predictability (Cross-Predictability)** — how well nearby monitors can be used to predict this monitor’s readings.
+
+    A **higher Consistency Score** suggests more stable readings at the monitor itself.  
+    A **higher Predictability Score** suggests that the monitor behaves in line with broader spatial patterns of air quality.
+
+    Lower scores in either dimension may indicate more irregular or localized effects influencing the sensor.
     """))
+
 
 # Additional Information Tab
 with tab2:
